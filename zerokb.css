@@ -1,0 +1,68 @@
+/* centered-container example */
+
+.example.centered-containers .centered {
+    border: 1px solid #a59;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+
+/* middle-col example */
+.example.middle-col .outer {
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 60px;
+    border: 1px solid silver;
+}
+
+.example.middle-col .left { 
+    float: left;
+    width: 100px;
+    height: 100%; /* Direct parent MUST have an absolute numeric height */ 
+    outline: 1px solid green;
+}
+
+.example.middle-col .right { 
+    float: right;
+    width: 100px;
+    height: 100%; /* Direct parent MUST have an absolute numeric height */ 
+    outline: 1px solid green;
+}
+
+.example.middle-col .middle {
+    overflow: hidden;
+    height: 100%; /* Direct parent MUST have an absolute numeric height */ 
+    outline: 1px solid red;
+}
+
+
+
+
+/* centering-text example */
+.example.centering-text .box {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #a59;
+    margin-top: 10px;
+}
+
+.example.centering-text .vertical {
+    height: 100px;
+    line-height: 100px;
+}
+
+.example.centering-text .horizontal {
+    height: 100px;
+    text-align: center;
+}
+
+.example.centering-text .centered {
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+

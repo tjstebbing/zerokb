@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+<head>
+<link rel='stylesheet' href='style.css'>
+<link rel='stylesheet' href='zerokb.css'>
+<title>ZeroKB - The no framework css framework</title>
+</head>
+<body>
+<div class='page intro'>
+    <h1>ZeroKB - The no framework CSS framework</h1>
+    <p>ZeroKB is the CSS framework you want when you don't want a CSS 
+    framework. The advent of CSS frameworks such as Bootstrap have been
+    a great boon for design-starved startups, but these frameworks often
+    have some unfortunate side-effects:</p>
+
+    <ul>
+        <li>Webpages and apps are often bloated with framework CSS, 
+        often 90% of which isn't even used by the page design.</li>
+        <li>Websites built with these frameworks often all look the same,
+        it's fairly easy to spot a bootstrap startup.</li>
+        <li>Developers don't learn anything about CSS, and when something
+        goes wrong they lack the skills to fix the problems themselves.</li>
+    </ul>
+
+    <p>ZeroKB is an attempt to replace large CSS frameworks with a simple
+    set of guidelines that will:</p>
+
+    <ul>
+        <li>Allow you to design pages the way you want.</li>
+        <li>Work across all modern browsers.</li>
+        <li>Supports LESS, SASS and any future CSS pre-compilers.</li>
+        <li>Make you a more rounded developer.</li>
+    </ul>
+
+    <!--ul>
+            <li>Bootstrap, minified comes in at <em>86KB</em></li>
+            <li>YUI, minified is around <em>50KB</em></li>
+            <li>ZeroKB, minified is around <em>0KB</em></li>
+        </ul-->
+</div>
+
+<div class='example containers container'>
+    <div class='description'>
+        <h2>Creating containers</h2>
+        <p>Containers are the heart of any layout, a container is simply a block
+        level element used to contain other elements (divs are a traditional 
+        choice, however this applies to header, footer and other html5 tags).</p>
+
+        <p>Some general rules for containers:</p>
+        <ul>
+            <li><em>position: relative;</em> relative positioning is critical for 
+            containers, it means that any sub-elements are positioned relative to
+            their container. This makes containers somewhat modular and 
+            maintainable.</li>
+            <li><em>box-sizing: border-box;</em> todo describe box-sizing here..</li>
+            <li><em>padding: 10px;</em> Be a pro, give your containers padding.</li>
+            
+        </ul>
+    </div>
+</div>
+
+<div class='example centered-containers container'>
+    <div class='description'>
+        <h2>Centering containers</h2>
+        <p>Centering a container is done by setting left and right margins and
+        giving the container a fixed width.</p>
+        <ul>
+            <li><em>margin-left: auto;</em></li>  
+            <li><em>margin-right: auto;</em></li>  
+            <li><em>width: 600px;</em></li>  
+        </ul>
+    </div>
+    <div class='centered container'>Centered Container</div>
+</div>
+
+
+<div class='example centering-text container'>
+    <div class='description'>
+        <h2>Centering text</h2>
+
+        <ul>
+            <li>To center horizontally, set <em>text-align: center;</em></li>
+            <li>To center vertically, set <em>height</em> and <em>line-height</em> to the same value.</li>
+        </ul>
+
+        <p><em>tip! this works great with font icons.</em></p>
+    </div>
+
+    <div class='horizontal box'>text is horizontally centered</div>
+    <div class='vertical box'>text is vertically centered</div>
+    <div class='centered box'>text is centered</div>
+</div>
+
+<div class='example middle-col container'>
+
+    <div class='description'>
+        <h2>Flexible middle columns.</h2>
+        <p>This example shows a simple method for handling the situation
+        where you need to fill the space between a left and right floated 
+        element with a flexible column.</p>
+
+        <ul>
+            <li>Parent container MUST have an absolute numeric height, ie: <em>height: 60px;</em></li>
+            <li>Set column height to 100%: <em>height: 100%;</em></li>
+            <li>Left and right columns are floated left and right, ie: <em>float: left;</em></li>
+            <li>Middle column magic: <em>overflow: hidden;</em></li>
+        </ul>
+    </div>
+    <div class='container outer'>
+        <div class='container left'> left </div>
+        <div class='container right'> right </div>
+        <div class='container middle'> middle </div>
+    </div>
+
+</div> 
+
+
+<div class='example grid-layout container'>
+    <div class='description'>
+        <h2>A simple 'grid' alternative.</h2>
+        <p>TODO</p>
+    </div>
+</div>
+
+<div class='example responsive-design container'>
+    <div class='description'>
+        <h2>Responsive elements with media queries.</h2>
+        <p>TODO</p>
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+.page {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto; 
+    font-family: sans-serif;
+}
+
+.page.intro {
+    padding: 30px;
+}
+
+.page .intro .not {
+    text-decoration: strikethrough;
+}
+
+.container {
+    position: relative; //containers should always be relative.
+    box-sizing: border-box;
+}
+
+.example {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:20px;
+    border: 1px solid silver;
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+.example .description {
+    size: 14px;
+}
+
+.example .description em {
+    color: #a59;
+}
+
